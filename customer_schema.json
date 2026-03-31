@@ -1,0 +1,143 @@
+{
+  "schema_version": "1.0",
+  "product": "agenticles",
+  "customer": {
+    "id": "customer_1774994287",
+    "name": "Charlie",
+    "email": "charlie.stoever@gmail.com",
+    "business_name": "Clutch Gears Gas",
+    "created_at": "2026-03-31T21:58:07.705386+00:00",
+    "plan": "starter",
+    "status": "onboarding",
+    "onboarding_complete": false
+  },
+  "brand": {
+    "business_name": "Clutch Gears Gas",
+    "niche": "general",
+    "niche_label": "Automotive + Lifestyle",
+    "what_they_do": "I post car content, car stories, car giveaways on the market, car market research, new model updates, interesting car storiesar stuff all around.",
+    "audience": "Chris Harris, James Pumpphrey, and Doug Demuro",
+    "point_of_view": "I beleive cars should be driven, I love sports cars - analogue feel, cars should be less computerized and the driving experience should be primary.",
+    "never_sounds_like": "A corporate noob trying to capitalize the market with bad products people dont want. consumer first - what",
+    "sign_off": "Hi the clutch, gear, gas, and go."
+  },
+  "tone_profile": {
+    "source": "onboarding_questions",
+    "confidence": "medium",
+    "voice": "derived from: I post car content, car stories, car giveaways on the market, car market research, new model updates",
+    "sentence_style": "short paragraphs, conversational, direct",
+    "person": "second",
+    "formality": "conversational",
+    "emotion": "warm and authentic",
+    "forbidden_words": [
+      "leverage",
+      "synergy",
+      "optimize",
+      "unlock",
+      "game-changer"
+    ],
+    "signature_phrases": [
+      "Hi the clutch, gear, gas, and go."
+    ],
+    "never_sounds_like": "A corporate noob trying to capitalize the market with bad products people dont want. consumer first - what",
+    "point_of_view": "I beleive cars should be driven, I love sports cars - analogue feel, cars should be less computerized and the driving experience should be primary.",
+    "audience_description": "Chris Harris, James Pumpphrey, and Doug Demuro",
+    "tone_adjectives": [
+      "passionate",
+      "authentic",
+      "enthusiast",
+      "opinionated"
+    ],
+    "tone_version": 1,
+    "last_updated": "2026-03-31T21:58:07.705425+00:00",
+    "tone_history": []
+  },
+  "content_platforms": {
+    "website": {
+      "platform": "wordpress",
+      "url": "https://clutch-gears-gas.com",
+      "api_endpoint": null,
+      "category_id": 1,
+      "author_id": 1,
+      "default_status": "draft",
+      "connected": false,
+      "post_format": {
+        "min_words": 350,
+        "max_words": 600,
+        "requires_exercise_block": false,
+        "heading_structure": [
+          "h2",
+          "h3"
+        ],
+        "always_includes_signoff": true
+      }
+    },
+    "newsletter": {
+      "platform": "brevo",
+      "enabled": true,
+      "sender_name": "Clutch Gears Gas",
+      "sender_email": "charlie.stoever@gmail.com",
+      "default_status": "draft",
+      "list_id": null,
+      "connected": false,
+      "post_format": {
+        "min_words": 150,
+        "max_words": 250,
+        "no_headers": true,
+        "reads_like_email": true,
+        "always_includes_signoff": true
+      }
+    },
+    "social": []
+  },
+  "media_library": {
+    "source": "unsplash",
+    "unsplash_keywords": [
+      "sports cars",
+      "car reviews",
+      "driving experience"
+    ],
+    "used_photos": [],
+    "total_photos": 0,
+    "fallback_source": "unsplash"
+  },
+  "topic_intelligence": {
+    "niche_keywords": [
+      "sports cars",
+      "car reviews",
+      "driving experience",
+      "automotive content",
+      "car market research",
+      "new model updates",
+      "analog driving",
+      "car culture"
+    ],
+    "topic_pool": [],
+    "used_topics": [],
+    "retired_topics": [],
+    "suggested_topics": [],
+    "topic_version": 1
+  },
+  "pipeline_runs": [],
+  "feedback_log": [],
+  "pm_intelligence": {
+    "quality_scores": [],
+    "tone_drift_alerts": [],
+    "topic_gap_suggestions": [],
+    "pipeline_health": {
+      "consecutive_successes": 0,
+      "consecutive_failures": 0,
+      "last_failure": null,
+      "last_failure_reason": null
+    },
+    "cost_tracking": {
+      "total_spent": 0.0,
+      "runs_this_month": 0,
+      "avg_cost_per_run": 0.0,
+      "month_start": null
+    },
+    "content_quality_baseline": null,
+    "last_analysis": null
+  },
+  "run_summary_log": []
+}
