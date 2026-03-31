@@ -49,7 +49,7 @@ Their audience: {answers.get('audience', '')}
 
 Return ONLY a JSON object with these fields:
 {{
-  "niche": "one of: food_lifestyle, creative_arts, business_finance, health_fitness, education_coaching, general",
+  "niche": "one of: food_lifestyle, creative_arts, business_finance, health_fitness, education_coaching, automotive_lifestyle, tech_gaming, travel_outdoor, fashion_beauty, sports_fitness, general",
   "niche_label": "human readable label like Food + Lifestyle",
   "topic_keywords": ["list", "of", "8", "relevant", "topic", "keywords"],
   "tone_adjectives": ["list", "of", "4", "tone", "words", "derived", "from", "their", "answers"]
