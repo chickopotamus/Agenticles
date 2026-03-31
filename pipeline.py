@@ -414,13 +414,8 @@ def run_pipeline():
     schema.log_run(run_data)
     schema.add_used_topic(topic)
 
-    print("\n=== RUN SUMMARY ===")
-    print(f"Business:    {business_name}")
-    print(f"Topic:       {topic}")
-    print(f"Post:        {wp_url}")
-    print(f"Newsletter:  {brevo_id}")
-    print(f"Photo:       {photo_path or 'none'}")
-    print("==================\n")
+    from pm_agent import run_pm_analysis
+    run_pm_analysis(run_data, drafts["wp_content"], drafts["nl_content"])
 
 if __name__ == "__main__":
     run_pipeline()

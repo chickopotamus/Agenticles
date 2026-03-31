@@ -164,31 +164,71 @@
       "The Beauty of Unplanned Charlie Moments",
       "How Being Named Charlie Shapes Your Internet Presence"
     ],
-    "used_topics": [],
+    "used_topics": [
+      "How One Charlie Started a Whole Trend"
+    ],
     "retired_topics": [],
     "suggested_topics": [],
     "topic_version": 1
   },
-  "pipeline_runs": [],
+  "pipeline_runs": [
+    {
+      "timestamp": "2026-03-31T22:42:23.477400+00:00",
+      "topic": "How One Charlie Started a Whole Trend",
+      "wp_url": "NOT_CONNECTED",
+      "brevo_id": "NOT_CONNECTED",
+      "photo": null,
+      "cost": 0.024,
+      "success": false,
+      "approved": false,
+      "quality_score": null,
+      "error": null
+    }
+  ],
   "feedback_log": [],
   "pm_intelligence": {
-    "quality_scores": [],
-    "tone_drift_alerts": [],
+    "quality_scores": [
+      {
+        "timestamp": "2026-03-31T22:42:23.486059+00:00",
+        "topic": "How One Charlie Started a Whole Trend",
+        "score": 90,
+        "flags": [
+          "sign-off missing from content"
+        ]
+      }
+    ],
+    "tone_drift_alerts": [
+      {
+        "timestamp": "2026-03-31T22:42:23.486063+00:00",
+        "alerts": [
+          "first person detected \u2014 tone profile says second person"
+        ]
+      }
+    ],
     "topic_gap_suggestions": [],
     "pipeline_health": {
       "consecutive_successes": 0,
-      "consecutive_failures": 0,
-      "last_failure": null,
+      "consecutive_failures": 1,
+      "last_failure": "2026-03-31T22:42:23.477632+00:00",
       "last_failure_reason": null
     },
     "cost_tracking": {
-      "total_spent": 0.0,
-      "runs_this_month": 0,
-      "avg_cost_per_run": 0.0,
+      "total_spent": 0.024,
+      "runs_this_month": 1,
+      "avg_cost_per_run": 0.024,
       "month_start": null
     },
     "content_quality_baseline": null,
     "last_analysis": null
   },
-  "run_summary_log": []
+  "run_summary_log": [
+    {
+      "timestamp": "2026-03-31T22:42:23.477400+00:00",
+      "topic": "How One Charlie Started a Whole Trend",
+      "wp_url": "NOT_CONNECTED",
+      "brevo_id": "NOT_CONNECTED",
+      "photo": null,
+      "success": false
+    }
+  ]
 }
