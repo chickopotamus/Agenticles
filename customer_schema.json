@@ -2,29 +2,29 @@
   "schema_version": "1.0",
   "product": "agenticles",
   "customer": {
-    "id": "customer_1774994287",
+    "id": "customer_1774996424",
     "name": "Charlie",
-    "email": "charlie.stoever@gmail.com",
-    "business_name": "Clutch Gears Gas",
-    "created_at": "2026-03-31T21:58:07.705386+00:00",
+    "email": "charlie@gmail.com",
+    "business_name": "charlie",
+    "created_at": "2026-03-31T22:33:44.839202+00:00",
     "plan": "starter",
     "status": "onboarding",
     "onboarding_complete": false
   },
   "brand": {
-    "business_name": "Clutch Gears Gas",
-    "niche": "general",
-    "niche_label": "Automotive + Lifestyle",
-    "what_they_do": "I post car content, car stories, car giveaways on the market, car market research, new model updates, interesting car storiesar stuff all around.",
-    "audience": "Chris Harris, James Pumpphrey, and Doug Demuro",
-    "point_of_view": "I beleive cars should be driven, I love sports cars - analogue feel, cars should be less computerized and the driving experience should be primary.",
-    "never_sounds_like": "A corporate noob trying to capitalize the market with bad products people dont want. consumer first - what",
-    "sign_off": "Hi the clutch, gear, gas, and go."
+    "business_name": "charlie",
+    "niche": "creative_arts",
+    "niche_label": "Creative Arts + Entertainment",
+    "what_they_do": "I share funny stories from the internet of people whos name is charlie",
+    "audience": "a gen z who likes funny and real stories of people named charlie",
+    "point_of_view": "charlie is a good name with good people named charlie",
+    "never_sounds_like": "not like a boomer or anything formal at all",
+    "sign_off": "dear charlies, charlie"
   },
   "tone_profile": {
     "source": "onboarding_questions",
     "confidence": "medium",
-    "voice": "derived from: I post car content, car stories, car giveaways on the market, car market research, new model updates",
+    "voice": "derived from: I share funny stories from the internet of people whos name is charlie",
     "sentence_style": "short paragraphs, conversational, direct",
     "person": "second",
     "formality": "conversational",
@@ -37,25 +37,25 @@
       "game-changer"
     ],
     "signature_phrases": [
-      "Hi the clutch, gear, gas, and go."
+      "dear charlies, charlie"
     ],
-    "never_sounds_like": "A corporate noob trying to capitalize the market with bad products people dont want. consumer first - what",
-    "point_of_view": "I beleive cars should be driven, I love sports cars - analogue feel, cars should be less computerized and the driving experience should be primary.",
-    "audience_description": "Chris Harris, James Pumpphrey, and Doug Demuro",
+    "never_sounds_like": "not like a boomer or anything formal at all",
+    "point_of_view": "charlie is a good name with good people named charlie",
+    "audience_description": "a gen z who likes funny and real stories of people named charlie",
     "tone_adjectives": [
-      "passionate",
-      "authentic",
-      "enthusiast",
-      "opinionated"
+      "humorous",
+      "relatable",
+      "entertaining",
+      "authentic"
     ],
     "tone_version": 1,
-    "last_updated": "2026-03-31T21:58:07.705425+00:00",
+    "last_updated": "2026-03-31T22:33:44.839225+00:00",
     "tone_history": []
   },
   "content_platforms": {
     "website": {
       "platform": "wordpress",
-      "url": "https://clutch-gears-gas.com",
+      "url": "https://charlie.com",
       "api_endpoint": null,
       "category_id": 1,
       "author_id": 1,
@@ -75,8 +75,8 @@
     "newsletter": {
       "platform": "brevo",
       "enabled": true,
-      "sender_name": "Clutch Gears Gas",
-      "sender_email": "charlie.stoever@gmail.com",
+      "sender_name": "charlie",
+      "sender_email": "charlie@gmail.com",
       "default_status": "draft",
       "list_id": null,
       "connected": false,
@@ -93,9 +93,9 @@
   "media_library": {
     "source": "unsplash",
     "unsplash_keywords": [
-      "sports cars",
-      "car reviews",
-      "driving experience"
+      "funny stories",
+      "internet content",
+      "people named charlie"
     ],
     "used_photos": [],
     "total_photos": 0,
@@ -103,66 +103,73 @@
   },
   "topic_intelligence": {
     "niche_keywords": [
-      "sports cars",
-      "car reviews",
-      "driving experience",
-      "automotive content",
-      "car market research",
-      "new model updates",
-      "analog driving",
-      "car culture"
+      "funny stories",
+      "internet content",
+      "people named charlie",
+      "humor",
+      "storytelling",
+      "gen z entertainment",
+      "relatable content",
+      "viral narratives"
     ],
     "topic_pool": [
-      "why analog sports cars are disappearing",
-      "best affordable sports cars to buy right now",
-      "how to find a good deal in the used car market",
-      "why driving feel matters more than horsepower",
-      "the best driving roads in america",
-      "how to spot a well-maintained used car",
-      "why electric cars are changing motorsport",
-      "the most underrated sports cars ever made",
-      "how car reviews have changed in the youtube era",
-      "why manual transmissions are making a comeback",
-      "the best cars for under 30000 dollars",
-      "how to negotiate at a car dealership",
-      "why japanese sports cars dominate track days",
-      "the problem with modern car infotainment systems",
-      "how to build a community around your car passion"
+      "Why Every Charlie Has a Chaotic Origin Story",
+      "The Charlie Effect: How One Name Attracts Chaos",
+      "Internet's Best Charlie Fails (And Why They're Golden)",
+      "Charlie Moments That Went Viral for All the Right Reasons",
+      "How Charlies Accidentally Become Legends",
+      "The Unhinged Brilliance of Famous Internet Charlies",
+      "Why Gen Z Charlies Are Different",
+      "Charlie Gets Stuck: Funny Situations Only This Name Attracts",
+      "Real Talk: What It's Like Being Named Charlie Online",
+      "The Charlie Curse: When Everything Goes Hilariously Wrong",
+      "How Charlies Turn Embarrassment Into Content Gold",
+      "Why Charlies Are Internet's Most Relatable People",
+      "Charlie Logic: Making Terrible Decisions Sound Reasonable",
+      "The Unexpected Wholesome Side of Chaos-Named Charlies",
+      "Why Your Charlie Friend Is Probably Going Viral Soon",
+      "Internet Charlies Who Actually Have It Together",
+      "The Charlie Chronicles: Real Stories From Reddit",
+      "How One Bad Decision Made A Charlie Famous",
+      "Charlies vs. Reality: When Plans Completely Fall Apart",
+      "The Unwritten Rules of Being a Funny Charlie",
+      "Why Charlies Get Into the Weirdest Situations",
+      "Real Charlie Energy: Recognizing It Instantly",
+      "How Charlies Accidentally Changed the Internet",
+      "The Charlie Formula: Confidence + Chaos = Viral Gold",
+      "Why Everyone Wants A Charlie in Their Friend Group",
+      "Charlies Who Learned Lessons the Hard Way (Funny Edition)",
+      "The Authenticity of Charlie Stories vs. Fake Internet Drama",
+      "How Charlies Make Awkward Situations Hilarious",
+      "Why Charlie Names Pop Off More Than Other Names",
+      "The Unexpected Wholeness in Charlie's Messiness",
+      "Charlies Being Accidentally Inspirational",
+      "Why Gen Z Charlies Hit Different on Social Media",
+      "The Charlie Effect on Group Chats",
+      "How Charlies Turn Fails Into Legendary Stories",
+      "Why We're Obsessed With Charlie Narratives",
+      "The Realness of Charlie's Unfiltered Takes",
+      "Charlies Who Went From Laughingstock to Legend",
+      "How One Charlie Started a Whole Trend",
+      "Why Charlies Are Better at Storytelling",
+      "The Emotional Intelligence Behind Funny Charlies",
+      "Charlies Being Accidentally Relatable to Millions",
+      "Why Bad Things Happen to Good Charlies",
+      "The Charlie Redemption Arc: From Cringe to Cool",
+      "How Charlies Find Comedy in Genuine Moments",
+      "Why Your Favorite Viral Person Might Be Named Charlie",
+      "The Underrated Charm of Chaotic Charlies",
+      "How Charlies Master the Art of Self-Deprecation",
+      "Why Charlies Create the Most Shareable Content",
+      "The Beauty of Unplanned Charlie Moments",
+      "How Being Named Charlie Shapes Your Internet Presence"
     ],
-    "used_topics": [
-      "how car market research affects your business",
-      "why electric cars are changing motorsport"
-    ],
+    "used_topics": [],
     "retired_topics": [],
     "suggested_topics": [],
     "topic_version": 1
   },
-  "pipeline_runs": [
-    {
-      "timestamp": "2026-03-31T22:11:22.458127+00:00",
-      "topic": "how car market research affects your business",
-      "wp_url": "NOT_CONNECTED",
-      "brevo_id": "NOT_CONNECTED",
-      "photo": null,
-      "cost": 0.024,
-      "success": false,
-      "approved": false,
-      "quality_score": null,
-      "error": null
-    },
-    {
-      "timestamp": "2026-03-31T22:19:13.704518+00:00",
-      "topic": "why electric cars are changing motorsport",
-      "wp_url": "NOT_CONNECTED",
-      "brevo_id": "NOT_CONNECTED",
-      "photo": null,
-      "cost": 0.024,
-      "success": false,
-      "approved": false,
-      "quality_score": null,
-      "error": null
-    }
-  ],
+  "pipeline_runs": [],
   "feedback_log": [],
   "pm_intelligence": {
     "quality_scores": [],
@@ -170,35 +177,18 @@
     "topic_gap_suggestions": [],
     "pipeline_health": {
       "consecutive_successes": 0,
-      "consecutive_failures": 2,
-      "last_failure": "2026-03-31T22:19:13.704720+00:00",
+      "consecutive_failures": 0,
+      "last_failure": null,
       "last_failure_reason": null
     },
     "cost_tracking": {
-      "total_spent": 0.048,
-      "runs_this_month": 2,
-      "avg_cost_per_run": 0.024,
+      "total_spent": 0.0,
+      "runs_this_month": 0,
+      "avg_cost_per_run": 0.0,
       "month_start": null
     },
     "content_quality_baseline": null,
     "last_analysis": null
   },
-  "run_summary_log": [
-    {
-      "timestamp": "2026-03-31T22:11:22.458127+00:00",
-      "topic": "how car market research affects your business",
-      "wp_url": "NOT_CONNECTED",
-      "brevo_id": "NOT_CONNECTED",
-      "photo": null,
-      "success": false
-    },
-    {
-      "timestamp": "2026-03-31T22:19:13.704518+00:00",
-      "topic": "why electric cars are changing motorsport",
-      "wp_url": "NOT_CONNECTED",
-      "brevo_id": "NOT_CONNECTED",
-      "photo": null,
-      "success": false
-    }
-  ]
+  "run_summary_log": []
 }

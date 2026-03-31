@@ -36,13 +36,17 @@ def ask(question, hint=None, multiline=True):
         return input("  > ").strip()
 
 def detect_niche(answers):
-    import urllib.request
-    import json
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
-        return "general"
+        return {
+            "niche": "general",
+            "niche_label": "General Business",
+            "topic_keywords": ["content", "business", "growth", "audience"],
+            "tone_adjectives": ["clear", "helpful", "direct", "friendly"]
+        }
+
     prompt = f"""Based on these answers from a new customer, identify their business niche.
-    
+
 What they do: {answers.get('what_you_do', '')}
 Their opinion: {answers.get('point_of_view', '')}
 Their audience: {answers.get('audience', '')}
@@ -86,6 +90,57 @@ Return only the JSON, no other text."""
             "topic_keywords": ["content", "business", "growth", "audience"],
             "tone_adjectives": ["clear", "helpful", "direct", "friendly"]
         }
+
+def generate_topic_pool(brand, niche_data):
+    print("  Generating topic pool...")
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    if not api_key:
+        return []
+
+    prompt = f"""Generate 50 content topics for a {niche_data.get('niche_label', 'general')} business.
+
+Business: {brand.get('business_name', '')}
+What they do: {brand.get('what_they_do', '')}
+Point of view: {brand.get('point_of_view', '')}
+Audience: {brand.get('audience', '')}
+Niche keywords: {', '.join(niche_data.get('topic_keywords', []))}
+
+Rules:
+- Each topic should be a short phrase a reader would click on
+- Topics should reflect the business's specific point of view
+- Mix of educational, opinion, and practical topics
+- No clickbait, no generic listicles
+- Specific to this niche and audience
+
+Return ONLY a JSON array of 50 topic strings, nothing else. Example:
+["topic one", "topic two", "topic three"]"""
+
+    payload = json.dumps({
+        "model": "claude-haiku-4-5-20251001",
+        "max_tokens": 2000,
+        "messages": [{"role": "user", "content": prompt}]
+    }).encode()
+    req = urllib.request.Request(
+        "https://api.anthropic.com/v1/messages",
+        data=payload,
+        headers={
+            "x-api-key": api_key,
+            "anthropic-version": "2023-06-01",
+            "Content-Type": "application/json"
+        },
+        method="POST"
+    )
+    try:
+        with urllib.request.urlopen(req) as r:
+            result = json.loads(r.read().decode())
+            text = result["content"][0]["text"].strip()
+            text = text.replace("```json", "").replace("```", "").strip()
+            topics = json.loads(text)
+            print(f"  Generated {len(topics)} topics.")
+            return topics
+    except Exception as e:
+        print(f"  Topic generation failed: {e}")
+        return []
 
 def build_tone_profile(answers, niche_data):
     return {
@@ -219,13 +274,11 @@ def run_onboarding():
 
     answers = {}
 
-    # Basic info
     print("\n--- Your details ---")
     answers['customer_name'] = ask("What's your name?", multiline=False)
     answers['customer_email'] = ask("What's your email address?", multiline=False)
     answers['business_name'] = ask("What's your business called?", multiline=False)
 
-    # The 5 tone questions
     print("\n--- Tell us about your business ---")
 
     answers['what_you_do'] = ask(
@@ -254,7 +307,6 @@ def run_onboarding():
         multiline=False
     )
 
-    # Newsletter
     print("\n--- One more thing ---")
     print("\nWe strongly recommend setting up a newsletter.")
     print("It's the fastest way to build a loyal audience.")
@@ -262,24 +314,33 @@ def run_onboarding():
     newsletter_choice = ask("Set up a newsletter? (yes/no)", multiline=False).lower()
     has_newsletter = newsletter_choice in ['yes', 'y', 'yeah', 'yep', 'sure']
 
-    # Detect niche
     print("\n  Analyzing your answers...")
     niche_data = detect_niche(answers)
     print(f"  Niche detected: {niche_data.get('niche_label', 'General')}")
 
-    # Build schema
-    schema = build_schema(answers, niche_data, has_newsletter)
+    print("\n  Building your content calendar...")
+    topics = generate_topic_pool(
+        {
+            "business_name": answers.get('business_name'),
+            "what_they_do": answers.get('what_you_do'),
+            "point_of_view": answers.get('point_of_view'),
+            "audience": answers.get('audience')
+        },
+        niche_data
+    )
 
-    # Save schema
+    schema = build_schema(answers, niche_data, has_newsletter)
+    schema["topic_intelligence"]["topic_pool"] = topics
+
     with open(SCHEMA_FILE, 'w') as f:
         json.dump(schema, f, indent=2)
 
-    # Summary
     print("\n" + "="*50)
     print("ONBOARDING COMPLETE")
     print("="*50)
     print(f"Business:    {answers['business_name']}")
     print(f"Niche:       {niche_data.get('niche_label', 'General')}")
+    print(f"Topics:      {len(topics)} topics generated")
     print(f"Newsletter:  {'Yes' if has_newsletter else 'Skipped for now'}")
     print(f"Schema:      {SCHEMA_FILE} created")
     print("\nNext step: connect your platforms and run the pipeline.")
