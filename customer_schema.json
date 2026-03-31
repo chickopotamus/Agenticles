@@ -112,13 +112,57 @@
       "analog driving",
       "car culture"
     ],
-    "topic_pool": [],
-    "used_topics": [],
+    "topic_pool": [
+      "why analog sports cars are disappearing",
+      "best affordable sports cars to buy right now",
+      "how to find a good deal in the used car market",
+      "why driving feel matters more than horsepower",
+      "the best driving roads in america",
+      "how to spot a well-maintained used car",
+      "why electric cars are changing motorsport",
+      "the most underrated sports cars ever made",
+      "how car reviews have changed in the youtube era",
+      "why manual transmissions are making a comeback",
+      "the best cars for under 30000 dollars",
+      "how to negotiate at a car dealership",
+      "why japanese sports cars dominate track days",
+      "the problem with modern car infotainment systems",
+      "how to build a community around your car passion"
+    ],
+    "used_topics": [
+      "how car market research affects your business",
+      "why electric cars are changing motorsport"
+    ],
     "retired_topics": [],
     "suggested_topics": [],
     "topic_version": 1
   },
-  "pipeline_runs": [],
+  "pipeline_runs": [
+    {
+      "timestamp": "2026-03-31T22:11:22.458127+00:00",
+      "topic": "how car market research affects your business",
+      "wp_url": "NOT_CONNECTED",
+      "brevo_id": "NOT_CONNECTED",
+      "photo": null,
+      "cost": 0.024,
+      "success": false,
+      "approved": false,
+      "quality_score": null,
+      "error": null
+    },
+    {
+      "timestamp": "2026-03-31T22:19:13.704518+00:00",
+      "topic": "why electric cars are changing motorsport",
+      "wp_url": "NOT_CONNECTED",
+      "brevo_id": "NOT_CONNECTED",
+      "photo": null,
+      "cost": 0.024,
+      "success": false,
+      "approved": false,
+      "quality_score": null,
+      "error": null
+    }
+  ],
   "feedback_log": [],
   "pm_intelligence": {
     "quality_scores": [],
@@ -126,18 +170,35 @@
     "topic_gap_suggestions": [],
     "pipeline_health": {
       "consecutive_successes": 0,
-      "consecutive_failures": 0,
-      "last_failure": null,
+      "consecutive_failures": 2,
+      "last_failure": "2026-03-31T22:19:13.704720+00:00",
       "last_failure_reason": null
     },
     "cost_tracking": {
-      "total_spent": 0.0,
-      "runs_this_month": 0,
-      "avg_cost_per_run": 0.0,
+      "total_spent": 0.048,
+      "runs_this_month": 2,
+      "avg_cost_per_run": 0.024,
       "month_start": null
     },
     "content_quality_baseline": null,
     "last_analysis": null
   },
-  "run_summary_log": []
+  "run_summary_log": [
+    {
+      "timestamp": "2026-03-31T22:11:22.458127+00:00",
+      "topic": "how car market research affects your business",
+      "wp_url": "NOT_CONNECTED",
+      "brevo_id": "NOT_CONNECTED",
+      "photo": null,
+      "success": false
+    },
+    {
+      "timestamp": "2026-03-31T22:19:13.704518+00:00",
+      "topic": "why electric cars are changing motorsport",
+      "wp_url": "NOT_CONNECTED",
+      "brevo_id": "NOT_CONNECTED",
+      "photo": null,
+      "success": false
+    }
+  ]
 }
