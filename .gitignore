@@ -4,3 +4,5 @@ customer_data/
 __pycache__/
 *.pyc
 PROJECT_BRIEF.md
+node_modules
+.next/
